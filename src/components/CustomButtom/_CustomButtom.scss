@@ -1,0 +1,30 @@
+.custom-buttom {
+    height: 50px;
+    width: 80px;
+    position: relative;
+    outline: none;
+    padding: 0 20px;
+    margin: 20px;
+    border-radius: 14px;
+    background-color: #ffb40a;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__arrowLeft {
+        position: absolute;
+        top: 12px;
+        left: 8px;
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+
+    &__arrowRight {
+        position: absolute;
+        top: 12px;
+        right: 8px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+}

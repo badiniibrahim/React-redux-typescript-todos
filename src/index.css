@@ -1,13 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,800,800i");
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  padding: 0;
+  height: 100%;
+  background-color: #9266FF; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .app__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #3f3160;
+    min-height: 500px;
+    width: 400px;
+    margin: 40px auto; }
+    .app__content__app {
+      display: flex;
+      flex-direction: row; }
+
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative; }
+  .custom-input__input {
+    height: 50px;
+    width: 200px;
+    display: block;
+    border: 1px solid #131212;
+    border-radius: 14px;
+    padding: 0 10px;
+    font-size: 10px;
+    padding: 0 20px;
+    margin: 20px;
+    font-size: 18px;
+    outline: none; }
+    .custom-input__input ::-webkit-input-placeholder {
+      background-color: red; }
+
+.custom-buttom {
+  height: 50px;
+  width: 80px;
+  position: relative;
+  outline: none;
+  padding: 0 20px;
+  margin: 20px;
+  border-radius: 14px;
+  background-color: #ffb40a; }
+  .custom-buttom:hover {
+    cursor: pointer; }
+  .custom-buttom__arrowLeft {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg); }
+  .custom-buttom__arrowRight {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg); }
+
+.todo-items {
+  color: white;
+  width: 300ps;
+  background-color: red;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px; }
+  .todo-items > P {
+    padding: 20px;
+    position: relative; }
+  .todo-items .faicons {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 15px; }
